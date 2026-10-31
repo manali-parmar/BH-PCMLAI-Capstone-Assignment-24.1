@@ -18,7 +18,7 @@ The goal is to understand historical patterns and evaluate model performance, no
 
 Monthly economic and financial data was collected from **Federal Reserve Economic Data (FRED)** and **Multpl**. The analysis includes stock market performance, GDP, inflation, unemployment, interest rates, and other U.S. economic indicators. Official NBER recession indicators were used to evaluate recession classifications.
 
-For Part A, **15 engineered features** were used. The data was divided chronologically into a **training period (1960–1999)** and a **testing period (2000–June 2026)**. Principal Component Analysis (PCA) reduced the standardized features to six components, retaining **86.1%** of the variation in the training data.
+For Part A, **15 engineered features** were used. The data was divided chronologically into a **training period (1960-1999)** and a **testing period (2000-June 2026)**. Principal Component Analysis (PCA) reduced the standardized features to six components, retaining **86.1%** of the variation in the training data.
 
 ## Part A: Economic Regimes and Recession Classification
 
@@ -51,7 +51,7 @@ Four classification models were evaluated: **Logistic Regression, Decision Tree,
 - **Random Forest** identified all 28 recession months, but incorrectly classified 28 non-recession months as recessions.
 - **KNN** identified 23 of the 28 recession months, missing five, but produced fewer false recession classifications (18).
 
-The chart below compares the number of actual and classified recession months by year. These are historical, same-month classifications—not forecasts made ahead of recessions.
+The chart below compares the number of actual and classified recession months by year. These are historical, same month classifications not forecasts made ahead of recessions.
 
 ![Actual versus classified recession months by year](images/recession_classification.png)
 
